@@ -1,0 +1,13 @@
+
+target/classes/com/gscf/wallpapers/CalculationForWallpapers.class
+target/classes/com/gscf/wallpapers/helpers/CalculationHelper.class
+target/classes/com/gscf/wallpapers/helpers/InputReader.class
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/com.gscf/wallpapers/pom.properties
+target/classes/META-INF/maven/com.gscf/wallpapers/pom.xml
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/surefire-reports/TEST-wallpapers.CalculationForWallpapersTest.xml
+target/surefire-reports/wallpapers.CalculationForWallpapersTest.txt
+target/test-classes/wallpapers/CalculationForWallpapersTest.class
+target/wallpapers-1.0.0-SNAPSHOT.jar
