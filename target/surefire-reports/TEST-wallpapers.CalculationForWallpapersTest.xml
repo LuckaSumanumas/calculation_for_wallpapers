@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="wallpapers.CalculationForWallpapersTest" time="0.023" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1257"/>
+    <property name="java.class.path" value="C:\Workspaces\neworkspace\calculation_for_wallpapers\target\test-classes;C:\Workspaces\neworkspace\calculation_for_wallpapers\target\classes;C:\Users\minda\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\minda\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\minda\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\minda\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\minda\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\minda\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="user.country.format" value="LT"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Java\jdk_1.8.0\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\minda\AppData\Local\Temp\surefire2213382106340315963\surefirebooter5364757000992934672.jar C:\Users\minda\AppData\Local\Temp\surefire2213382106340315963 2022-08-06T09-11-45_232-jvmRun1 surefire91937303193634864tmp surefire_05774997959168387945tmp"/>
+    <property name="surefire.test.class.path" value="C:\Workspaces\neworkspace\calculation_for_wallpapers\target\test-classes;C:\Workspaces\neworkspace\calculation_for_wallpapers\target\classes;C:\Users\minda\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\minda\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\minda\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\minda\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\minda\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\minda\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\minda"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Java\jdk_1.8.0\jre"/>
+    <property name="basedir" value="C:\Workspaces\neworkspace\calculation_for_wallpapers"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\minda\AppData\Local\Temp\surefire2213382106340315963\surefirebooter5364757000992934672.jar"/>
+    <property name="sun.boot.class.path" value="C:\Java\jdk_1.8.0\jre\lib\resources.jar;C:\Java\jdk_1.8.0\jre\lib\rt.jar;C:\Java\jdk_1.8.0\jre\lib\sunrsasign.jar;C:\Java\jdk_1.8.0\jre\lib\jsse.jar;C:\Java\jdk_1.8.0\jre\lib\jce.jar;C:\Java\jdk_1.8.0\jre\lib\charsets.jar;C:\Java\jdk_1.8.0\jre\lib\jfr.jar;C:\Java\jdk_1.8.0\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="user.name" value="minda"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Java\jdk_1.8.0\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1257"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\minda\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\minda\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="user.dir" value="C:\Workspaces\neworkspace\calculation_for_wallpapers"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="lt"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Java\jdk_1.8.0\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:/eclipse/eclipse-jee-2020/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;F:/eclipse/eclipse-jee-2020/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Java\open-jdk-11\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\minda\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Docker Toolbox;C:\Users\minda\AppData\Roaming\npm;C:\Users\minda\AppData\Local\atom\bin;C:\Apache\apache-maven-3.5.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\phpcomposer\vendor\phalcon\devtools;C:\wamp64\bin\php\php7.0.10;C:\phpcomposer;C:\Gradle\gradle-4.8\bin;C:\Program Files\Microsoft VS Code\bin;C:\oracle\instantclient_12_2;C:\Program Files\nodejs\;C:\Users\minda\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\wildfly\bin;C:\Users\minda\AppData\Local\Microsoft\WindowsApps;C:\Users\minda\AppData\Local\atom\bin;C:\Users\minda\AppData\Local\Microsoft\WindowsApps;C:\Users\minda\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\H2\bin;C:\Users\minda\AppData\Roaming\Composer\vendor\bin;C:\Users\minda\AppData\Roaming\npm;C:\JetBrains\IntelliJ IDEA Community Edition 2020.3.1\bin;;;F:\eclipse\eclipse-jee-2020\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.ext.dirs" value="C:\Java\jdk_1.8.0\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testImmutableCollections" classname="wallpapers.CalculationForWallpapersTest" time="0.015"/>
+</testsuite>
