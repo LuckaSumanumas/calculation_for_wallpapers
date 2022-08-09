@@ -15,14 +15,12 @@ public class CalculationForWallpapers {
 		InputReader inputReader = new InputReader();
 
 		List<String> dimentionsList = inputReader.readFromInput();
-		String[][] dimentionsStr = calculationHelper.retrieveDimentionsFromString(dimentionsList);
-
-		int[][] dimentions = new int[dimentionsStr.length][3];
-
-		calculationHelper.calculateTotalArea(dimentionsStr, dimentions);
-
-		logger.info("Total area:" + calculationHelper.getTotalArea());
-		logger.info("Cubic rooms:" + calculationHelper.getCubicRooms());
-		logger.info("Repeating rooms:" + calculationHelper.getRepeatingRooms());
+		calculationHelper.retrieveDimentionsFromString(dimentionsList);
+		calculationHelper.calculateSurfaceAreas();
+		calculationHelper.checkForSameRooms();
+		
+		logger.info("Total area in square feet: " + calculationHelper.getTotalArea());
+		logger.info("Cubic rooms in square feet: " + calculationHelper.getCubicRooms());
+		logger.info("Same rooms in square feet: " + calculationHelper.getSameRooms());
 	}
 }

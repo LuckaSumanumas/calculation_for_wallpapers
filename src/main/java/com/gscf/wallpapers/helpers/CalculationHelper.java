@@ -3,50 +3,48 @@ package com.gscf.wallpapers.helpers;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class CalculationHelper {
 
 	private Integer totalArea = 0;
+	private List<List<Integer>> roomsSides = new ArrayList<>();
 	private List<Integer> cubicRooms = new ArrayList<>();
-	private List<Integer> repeatingRooms = new ArrayList<>();
+	private List<Integer> sameRooms = new ArrayList<>();
+	private HashMap<Integer, Integer> surfaceAreas = new HashMap<>();
 
-	public String[][] retrieveDimentionsFromString(List<String> dimentionsStr) {
+	public void retrieveDimentionsFromString(List<String> dimentionsStr) {
 
-		String sides[][] = new String[dimentionsStr.size()][3];
+		dimentionsStr.stream().forEach((dimentionStr) -> {
+			String roomDimentions[] = dimentionStr.split("x");
 
-		for (int i = 0; i <= dimentionsStr.size() - 1; i++) {
-			sides[i] = dimentionsStr.get(i).split("x");
-		}
+			Integer l = Integer.parseInt(roomDimentions[0]);
+			Integer w = Integer.parseInt(roomDimentions[1]);
+			Integer h = Integer.parseInt(roomDimentions[2]);
 
-		return sides;
-
+			roomsSides.add(Arrays.asList(l, w, h));
+		});
 	}
 
-	public void calculateTotalArea(String[][] dimentionsStr, int[][] dimentions) {
+	public void calculateSurfaceAreas() {
 
-		for (int i = 0; i <= dimentionsStr.length - 1; i++) {
-
-			int l = Integer.parseInt(dimentionsStr[i][0]);
-			int w = Integer.parseInt(dimentionsStr[i][1]);
-			int h = Integer.parseInt(dimentionsStr[i][2]);
-
-			dimentions[i][0] = l;
-			dimentions[i][1] = w;
-			dimentions[i][2] = h;
-
+		for (int i = 0; i < roomsSides.size(); i++) {
+			Integer l = roomsSides.get(i).get(0);
+			Integer w = roomsSides.get(i).get(1);
+			Integer h = roomsSides.get(i).get(2);
+			
 			int surfaceArea = calculateSurfaceArea(l, w, h);
-
+			
+			surfaceAreas.put(i, surfaceArea);
+			
 			totalArea += surfaceArea;
 
 			if (isCubic(l, w, h)) {
 				cubicRooms.add(surfaceArea);
 			}
 
-			if (checkForDuplicates(dimentions)) {
-				repeatingRooms.add(surfaceArea);
-			}
 		}
 	}
 
@@ -65,25 +63,26 @@ public class CalculationHelper {
 		return surfaceArea + extra;
 	}
 
-	private boolean checkForDuplicates(int[][] dimentions) {
-		for (int i = 0; i < dimentions.length; i++) {
-			for (int j = i + 1; j < dimentions.length; j++) {
-				if (dimentions[i][0] == dimentions[j][0] && dimentions[i][1] == dimentions[j][1]
-						&& dimentions[i][2] == dimentions[j][2]) {
-					return true;
+	public void checkForSameRooms() {
+		for (int i = 0; i < roomsSides.size(); i++) {
+			for (int j = i + 1; j < roomsSides.size(); j++) {
+				if (isSameRooms(roomsSides.get(i), roomsSides.get(j))) {
+					sameRooms.add(surfaceAreas.get(i));
 				}
 			}
 		}
+	}
 
-		return false;
+	private boolean isSameRooms(List<Integer> room1, List<Integer> room2) {
+		return room1.get(0) == room2.get(0) && room1.get(1) == room2.get(1) && room1.get(2) == room2.get(2);
 	}
 
 	public List<Integer> getCubicRooms() {
 		return cubicRooms.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
 	}
 
-	public List<Integer> getRepeatingRooms() {
-		return repeatingRooms;
+	public List<Integer> getSameRooms() {
+		return sameRooms;
 	}
 
 	public Integer getTotalArea() {
