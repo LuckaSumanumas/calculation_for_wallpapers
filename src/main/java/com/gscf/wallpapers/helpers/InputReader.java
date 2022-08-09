@@ -6,15 +6,19 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class InputReader {
 
+	Logger logger = Logger.getLogger(InputReader.class.getName());
+
 	public List<String> readFromInput() {
 		String fileName = "input1.txt";
 
 		ClassLoader classLoader = getClass().getClassLoader();
+
 		File file = new File(classLoader.getResource(fileName).getFile());
 
 		List<String> dimentions = new ArrayList<>();
@@ -25,8 +29,6 @@ public class InputReader {
 			e.printStackTrace();
 		}
 
-		
-		
 		return dimentions;
 	}
 
